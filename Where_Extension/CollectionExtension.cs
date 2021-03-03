@@ -5,19 +5,15 @@ namespace Where_Extension
 {
     public static class CollectionExtension
     {
-        public static ICollection<int> Where(this ICollection<int> collection, Func<int, bool> func)
+        public static IEnumerable<int> Where(this IEnumerable<int> collection, Func<int, bool> func)
         {
-            var result = new List<int>();
-
             foreach (var item in collection)
             {
                 if (func(item))
                 {
-                    result.Add(item);
+                    yield return item;
                 }
             }
-
-            return result;
         }
     }
 }
