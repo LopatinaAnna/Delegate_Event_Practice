@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30803.129
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate_Event_Practice", "Delegate_Event_Practice\Delegate_Event_Practice.csproj", "{229A40FB-66A8-4820-9E3E-10C9D0CAF1A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegate_Event_Practice", "Delegate_Event_Practice\Delegate_Event_Practice.csproj", "{229A40FB-66A8-4820-9E3E-10C9D0CAF1A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Where_Extension", "Where_Extension\Where_Extension.csproj", "{E8A41EC5-BF0D-4F40-81B1-C0E2D6DCD1A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{229A40FB-66A8-4820-9E3E-10C9D0CAF1A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{229A40FB-66A8-4820-9E3E-10C9D0CAF1A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{229A40FB-66A8-4820-9E3E-10C9D0CAF1A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8A41EC5-BF0D-4F40-81B1-C0E2D6DCD1A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8A41EC5-BF0D-4F40-81B1-C0E2D6DCD1A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8A41EC5-BF0D-4F40-81B1-C0E2D6DCD1A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8A41EC5-BF0D-4F40-81B1-C0E2D6DCD1A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
