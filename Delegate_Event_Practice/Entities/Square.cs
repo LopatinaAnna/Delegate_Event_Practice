@@ -9,10 +9,15 @@ namespace Delegate_Event_Practice
             Points = points;
         }
 
+        public event EventHandler GetArea;
+
         public double Width()
             => Math.Round(Math.Sqrt(Distance(Points[0], Points[1])), 2);
 
         public override double Area()
-            => Math.Round(Width() * Width(), 2);
+        {
+            GetArea?.Invoke(this, null);
+            return Math.Round(Width() * Width(), 2);
+        }
     }
 }

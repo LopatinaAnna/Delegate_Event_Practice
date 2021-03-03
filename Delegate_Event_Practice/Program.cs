@@ -5,6 +5,9 @@ namespace Delegate_Event_Practice
 {
     class Program
     {
+        static void GetArea() 
+            => Console.WriteLine("Getting area");
+
         static void Main(string[] args)
         {
             var points = new Point[4]
@@ -18,6 +21,7 @@ namespace Delegate_Event_Practice
             if (IsSquare(points))
             {
                 var square = new Square(points);
+                square.GetArea += (sender, args) => Console.WriteLine("Getting square area"); 
 
                 Console.WriteLine("\nThis is a square:");
                 Console.WriteLine($"Width: {square.Width()}");
@@ -31,6 +35,8 @@ namespace Delegate_Event_Practice
             if (IsRectangle(points))
             {
                 var rectangle = new Rectangle(points);
+                rectangle.GetArea += GetArea;
+                rectangle.GetWidth += () => Console.WriteLine("Getting rectangle width");
 
                 Console.WriteLine("\nThis is a rectangle:");
                 Console.WriteLine($"Width: {rectangle.Width()}");
@@ -45,6 +51,7 @@ namespace Delegate_Event_Practice
             if (IsTriangle(points))
             {
                 var triangle = new Triangle(points);
+                triangle.GetArea += GetArea;
 
                 Console.WriteLine("\nThis is a triangle:");
                 Console.WriteLine($"Area: {triangle.Area()}");
