@@ -5,7 +5,7 @@ namespace Where_Extension
 {
     public static class CollectionExtension
     {
-        public static IEnumerable<int> Where(this IEnumerable<int> collection, Func<int, bool> func)
+        public static IEnumerable<T> Where<T>(this IEnumerable<T> collection, Func<T, bool> func)
         {
             foreach (var item in collection)
             {

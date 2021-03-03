@@ -14,6 +14,14 @@ namespace Where_Extension
             {
                 Console.WriteLine(item);
             }
+
+            List<string> list2 = new List<string> { "test1", "test2", "test3" };
+            var result2 = list2.Where(c => c.Contains('2'));
+
+            foreach (var item in result2)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
